@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="2E2E0801-8EAB-27B8-30B0-ACD8B72F43F5" mainViewID="6354CED8-45A1-4492-76CF-94E6F314BAC2">
-<createdBy>KEVIN</createdBy>
-<createdTime>2022-06-11 20:20:38 UTC</createdTime>
-<ownerDesignName>trabajo Final Grupal</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>
