@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F831D713-44D3-399E-78F2-3F649F5A4ABD" name="METODO_PAGO">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>16FED3BB-A9B2-D9A1-0FFA-E5BC6FB24C52</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="89F06E9D-9916-6381-9DCD-1063F3875D08">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>BC6F5DA3-1441-7532-821E-1253E9364DE1</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TARJETA_CREDITO_ID" id="DBC1481B-B226-273D-E246-47184A8E58D8">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>AD4C8F81-AFE0-9DAB-94E5-27140F373E8B</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="91094F80-A489-0190-5EF7-BB22CFDE586B" referredColumn="2738B704-7A2F-5D97-9893-2357C65C53CA"/>
+</associations>
+</Column>
+<Column name="CITA_ID" id="F4E37D85-43B6-F451-2295-883C7B872914">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>3DD0A4BD-69D1-2FF0-2A9D-EAEE044DBAA9</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1FABB85A-22C9-47B0-F5ED-252CB2A333AF" referredColumn="9A1828DB-3D06-3688-5D4F-D36EA00D7920"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="751AA4AA-40B5-F4F3-F489-F854CF894FFC" name="METODO_PAGO_PK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>9052741A-F5FB-4B5E-0A18-7E40460118D1</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89F06E9D-9916-6381-9DCD-1063F3875D08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F31DC9B-E555-98CF-CE2D-AD6E030BC71D" name="METODO_PAGO__IDX">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5FD2CC48-16E4-5664-9B16-5008FDA6C3E1</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DBC1481B-B226-273D-E246-47184A8E58D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="297C5E49-5877-2D4A-E816-88F98AB0570E" name="METODO_PAGO__IDXv1">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>95F15253-7945-38B7-2AD8-F085B5781462</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="F4E37D85-43B6-F451-2295-883C7B872914"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77D91457-CFA9-C40E-1258-25F6B6E58BE0" name="METODO_PAGO_TARJETA_CREDITO_FK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>5FD2CC48-16E4-5664-9B16-5008FDA6C3E1</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBC1481B-B226-273D-E246-47184A8E58D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC2B76E0-6ED2-740F-49EF-19F11E6F58F2" name="METODO_PAGO_CITA_FK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>95F15253-7945-38B7-2AD8-F085B5781462</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4E37D85-43B6-F451-2295-883C7B872914"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

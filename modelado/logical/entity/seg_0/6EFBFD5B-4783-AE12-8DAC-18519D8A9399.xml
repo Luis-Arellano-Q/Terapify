@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6EFBFD5B-4783-AE12-8DAC-18519D8A9399" name="TARJETA_CREDITO">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:00:43 UTC</createdTime>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<engineerTo>
+<item key="0A183E8B-A7AC-117A-66F3-B184C15F680E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="2AC8E88C-B1DF-045A-981F-67894F571219">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:00:56 UTC</createdTime>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<engineerTo>
+<item key="0A183E8B-A7AC-117A-66F3-B184C15F680E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="116F2787-26A2-6041-9483-1D4615B7F732">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:01:31 UTC</createdTime>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<engineerTo>
+<item key="0A183E8B-A7AC-117A-66F3-B184C15F680E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Vecimiento" id="1BCB2FC6-951F-7FAD-8806-DAFDFDFAF6B5">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:02:26 UTC</createdTime>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<engineerTo>
+<item key="0A183E8B-A7AC-117A-66F3-B184C15F680E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CVC" id="8A815367-BCD4-10FF-9748-9511DE017CC8">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:03:17 UTC</createdTime>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<engineerTo>
+<item key="0A183E8B-A7AC-117A-66F3-B184C15F680E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="E3829E2B-4F28-A1F2-6B2A-60533089302A">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:07:30 UTC</createdTime>
+<generatorID>FC7DA35E-6A0E-34C4-1492-CD0B424BB56B</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<engineerTo>
+<item key="0A183E8B-A7AC-117A-66F3-B184C15F680E" value="true"/>
+</engineerTo>
+<referedAttribute>657124D8-A897-261E-3FA3-8C396209B087</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="35956EF5-A47E-94EC-4131-38ED71D2BD66" name="TARJETA_CREDITO PK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:01:25 UTC</createdTime>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<engineerTo>
+<item key="0A183E8B-A7AC-117A-66F3-B184C15F680E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2AC8E88C-B1DF-045A-981F-67894F571219</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

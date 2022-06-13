@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8B4D8A02-D91C-FEB4-3F8E-70CF61585FA3" containerWithKeyObject="DBAFBF7E-9F64-2A13-C6E2-3F1379E1C2E1" localFKIndex="58609AD4-7796-B84B-5D58-B0D3040111A7" name="CITA_Psicologo_FK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>694EC912-032F-01DF-5ADE-A83E3C7B0213</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<referredTableLongName>Psicologo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ADD9840B-62CA-2FB8-D7E4-055F3F895E37</referredTableID>
+<keyObject>2016942D-8141-1327-1793-2985D1678A88</keyObject>
+<referredKeyID>2016942D-8141-1327-1793-2985D1678A88</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

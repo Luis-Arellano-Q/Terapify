@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="trabajo Final Grupal" id="7D61D363-8B46-5202-A90F-4266E8BBF171" version="3.5">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:20:38 UTC</createdTime>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>7D61D363-8B46-5202-A90F-4266E8BBF171</designId>
+</OSDM_Design>

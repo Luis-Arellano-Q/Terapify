@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09322018-7AA0-4957-F6C4-3685A1B4D1A9" name="TARJETA_CREDITO">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>6EFBFD5B-4783-AE12-8DAC-18519D8A9399</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2738B704-7A2F-5D97-9893-2357C65C53CA">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>2AC8E88C-B1DF-045A-981F-67894F571219</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="CDB64EBE-D2F6-CA03-1A27-256742489399">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>116F2787-26A2-6041-9483-1D4615B7F732</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Vecimiento" id="2EE9334A-8EBD-FADE-B7CB-2A1A66B3A68B">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>1BCB2FC6-951F-7FAD-8806-DAFDFDFAF6B5</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CVC" id="E25B2288-F17A-E7F8-BBCD-2745CE9224CB">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>8A815367-BCD4-10FF-9748-9511DE017CC8</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTE_ID" id="15499C48-4C7B-52D5-05D8-F06D932B04B6">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>E3829E2B-4F28-A1F2-6B2A-60533089302A</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4FE67749-B44C-1795-B810-C6D8648C343F" referredColumn="748FA4AD-D663-4D80-50E8-2A0501805158"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD0DD7C7-79A2-52CC-E98F-317857CA4309" name="TARJETA_CREDITO_PK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>35956EF5-A47E-94EC-4131-38ED71D2BD66</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2738B704-7A2F-5D97-9893-2357C65C53CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E8F0140-0E2B-4357-99A5-3C2E28A13C5C" name="TARJETA_CREDITO__IDX">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>FC7DA35E-6A0E-34C4-1492-CD0B424BB56B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="15499C48-4C7B-52D5-05D8-F06D932B04B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C28E530-53A7-495E-E1EA-0878A49891BC" name="TARJETA_CREDITO_CLIENTE_FK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>FC7DA35E-6A0E-34C4-1492-CD0B424BB56B</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15499C48-4C7B-52D5-05D8-F06D932B04B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

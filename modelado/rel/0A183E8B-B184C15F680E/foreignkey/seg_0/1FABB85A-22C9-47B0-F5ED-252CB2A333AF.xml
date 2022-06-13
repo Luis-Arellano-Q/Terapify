@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1FABB85A-22C9-47B0-F5ED-252CB2A333AF" containerWithKeyObject="F831D713-44D3-399E-78F2-3F649F5A4ABD" localFKIndex="EC2B76E0-6ED2-740F-49EF-19F11E6F58F2" name="METODO_PAGO_CITA_FK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 21:17:59 UTC</createdTime>
+<generatorID>95F15253-7945-38B7-2AD8-F085B5781462</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<referredTableLongName>CITA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DBAFBF7E-9F64-2A13-C6E2-3F1379E1C2E1</referredTableID>
+<keyObject>B4C0C8B7-7A62-0A44-93AA-FAFE07CCD421</keyObject>
+<referredKeyID>B4C0C8B7-7A62-0A44-93AA-FAFE07CCD421</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

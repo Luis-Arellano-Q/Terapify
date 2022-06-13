@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DBAFBF7E-9F64-2A13-C6E2-3F1379E1C2E1" name="CITA">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>7C6C3CA3-A9EF-A368-F424-EDE0E9150505</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="9A1828DB-3D06-3688-5D4F-D36EA00D7920">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>B26A86B2-71E8-7441-B7FC-76799295AA42</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="2A281763-0B6B-E4A4-399D-B94A2FDCB005">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>593CB57D-04A8-F448-A30A-47DC218C9F8A</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Precio" id="58C6D9CE-8D47-C0C8-763E-EA24964AC085">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>32D90B42-867D-327E-0D23-A079B6E268F2</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="BA08494C-14E2-0CF2-EF52-55F27929D7E5">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>A5B657F1-0A5E-805D-1602-70C5A6D66B9B</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Psicologo_ID" id="1D9B8076-D196-71BB-1BFB-ACE76750C03D">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>F82834B8-B132-6999-6AF6-99D558D6C609</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B4D8A02-D91C-FEB4-3F8E-70CF61585FA3" referredColumn="48407304-5247-7379-1C52-72DAEDC94574"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4C0C8B7-7A62-0A44-93AA-FAFE07CCD421" name="CITA_PK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>2453DC7F-D72B-8B36-39BE-FA34E2CF8639</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A1828DB-3D06-3688-5D4F-D36EA00D7920"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58609AD4-7796-B84B-5D58-B0D3040111A7" name="CITA_Psicologo_FK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>694EC912-032F-01DF-5ADE-A83E3C7B0213</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D9B8076-D196-71BB-1BFB-ACE76750C03D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

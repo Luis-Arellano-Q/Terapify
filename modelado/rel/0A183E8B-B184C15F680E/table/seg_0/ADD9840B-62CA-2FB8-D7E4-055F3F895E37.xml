@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ADD9840B-62CA-2FB8-D7E4-055F3F895E37" name="Psicologo">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>B90CFA93-3D4F-8253-7919-2F117948FD96</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="48407304-5247-7379-1C52-72DAEDC94574">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>8573DF6A-AEEF-0DC6-071A-F5DE54400979</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="86C7F530-711D-47E6-50DA-092846919E0D">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>AFE63CB2-64C3-2BC5-FE31-BA70B7E9D841</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="7A8349E8-53B5-A733-1DD2-F5CC9B93096D">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>D2EC78A2-8EE3-DA82-6087-812A0E65E987</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="especialidad" id="F5D4B5AE-45F7-44EC-DCC9-7F9806165192">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>AAC675DF-7BED-0B3A-2F44-F165659F1F95</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_Nacimiento" id="F818888A-A08B-1CCA-1302-DE30CBC2697F">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>BAB56D49-C025-9E4C-F59F-3C3386198FB4</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="966482C5-066A-69E8-6990-3791EC544B9E">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>CADD0ACC-B273-E7FD-60FA-7AD398D527EB</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="665A22C7-69D4-954A-FEFA-9D0CADEBA9F9">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>444FDCA4-6DCD-55A9-5CE6-70623FF61EE0</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genero" id="EB8DE2FC-6148-DDAF-1EB1-305D101C97A0">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>B84D419F-6072-D7A5-7FB5-0FE8623B14CC</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2016942D-8141-1327-1793-2985D1678A88" name="Psicologo_PK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-11 20:56:24 UTC</createdTime>
+<generatorID>F9BA0DB8-1BAB-1977-9D28-9C187016CCDA</generatorID>
+<ownerDesignName>trabajo Final Grupal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48407304-5247-7379-1C52-72DAEDC94574"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
