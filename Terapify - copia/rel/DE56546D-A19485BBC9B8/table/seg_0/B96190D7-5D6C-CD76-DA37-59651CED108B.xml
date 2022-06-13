@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B96190D7-5D6C-CD76-DA37-59651CED108B" name="CITA">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>E305E84C-FDFF-2EA6-B65B-064C4801022F</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E8FF77C7-23D1-C22C-3DD4-82C73F3005DA">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>41CBC6B4-4B24-B7D0-0ACB-E7413A4F358A</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="58DAA47A-06C0-8A6E-5333-7BC4D7A8F205">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>ED4A1C4D-41A9-774B-F02B-987497F559F3</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="3D0C9319-9DEA-9BCB-9BDC-F03341E2C795">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>9F0235F5-BA52-45A8-46BC-B8859E3FC609</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="5581E301-0D12-8B4B-A0DC-7F188522F4DA">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>93708237-4736-9C86-CF7E-6A39E33F3079</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PSICOLOGO_ID" id="EAE0CFAC-54F7-E0DB-2DE6-9C5E6DF86559">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>5595F221-6122-F5AE-6362-2411900906AA</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3D2BE9A-6F47-E9E8-FC50-CD5373136CC8" referredColumn="B01AD79B-99EF-9EB4-307E-6E271717A3EA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="492D83B0-2328-7A95-DF3C-9308232D4F5D" name="CITA_PK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>3908684C-DC5B-272C-2A72-629FC8323FDA</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8FF77C7-23D1-C22C-3DD4-82C73F3005DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8457D3D1-7A54-A646-7CC2-06404C50802E" name="CITA_PSICOLOGO_FK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>852C43CD-29C9-F8E6-DCF9-0F8CBF0AB24D</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAE0CFAC-54F7-E0DB-2DE6-9C5E6DF86559"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

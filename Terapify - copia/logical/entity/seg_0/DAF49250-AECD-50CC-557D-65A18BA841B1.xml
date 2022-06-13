@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DAF49250-AECD-50CC-557D-65A18BA841B1" name="METODO_PAGO">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:27:44 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="ED68C868-BACE-17CF-6A40-0125CC4E0BCC">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:28:38 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="7979AD41-207D-53A3-D963-D9E163E248DC">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:41:12 UTC</createdTime>
+<generatorID>740108A5-66B8-DCD7-D395-286DDD922381</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<referedAttribute>41CBC6B4-4B24-B7D0-0ACB-E7413A4F358A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F6B7579C-92AE-B3A3-C1D3-843F93F6C3AC" name="FORMA_PAGO PK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:28:47 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ED68C868-BACE-17CF-6A40-0125CC4E0BCC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

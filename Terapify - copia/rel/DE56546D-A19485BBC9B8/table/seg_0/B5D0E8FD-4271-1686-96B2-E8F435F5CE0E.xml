@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5D0E8FD-4271-1686-96B2-E8F435F5CE0E" name="PSICOLOGO">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>0147AF2D-72B1-9CB9-2D3C-930FC0AB9148</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B01AD79B-99EF-9EB4-307E-6E271717A3EA">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>795AF5C3-2061-C73A-9DB5-D1A0B3BD531E</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="C45456F4-BCED-52AE-BDC0-5CAB6D04CDC1">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>A0E6BF44-C466-BCBF-0909-60AF276DD19B</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="F89F972B-FF2B-778C-A379-D6A3D64665E2">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>6FED3476-B47A-553B-C9F3-6E7CDF99D1A6</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_Nacimiento" id="07C4DCEA-A9DD-E5D7-9915-B98ED4C90095">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>08A2FEE2-FBE3-7126-CCCE-9FA6C3E9E69A</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="68A579FB-FD21-9704-CCEA-729947266989">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>105DC516-1212-ADC8-A248-087F3BA0D825</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="especialistas" id="7E362ADC-F30B-3A5D-A3B8-0CF2F6426766">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>023885FE-0DC8-4CFA-D31A-4AB5354AAEDE</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="35BA1804-56E0-5744-1734-A4AAB39F222A">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>56723A61-014F-ACF3-9905-DFCEC3AF7429</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genero" id="68F6B915-8418-95E3-EB38-50146A9E3917">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>6A12D225-5F1A-5572-B2D8-ABABFA431D82</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9202EBC0-453A-B145-0D44-33D7815680AB" name="PSICOLOGO_PK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>5112B25B-C9BE-5A68-14E0-ED0326A6ED2F</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B01AD79B-99EF-9EB4-307E-6E271717A3EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

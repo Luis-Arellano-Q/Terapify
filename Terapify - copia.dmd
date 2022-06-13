@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Terapify" id="6960E0A8-3B38-7D55-B99E-2DC0F37F63A0" version="3.5">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:22:11 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>6960E0A8-3B38-7D55-B99E-2DC0F37F63A0</designId>
+</OSDM_Design>

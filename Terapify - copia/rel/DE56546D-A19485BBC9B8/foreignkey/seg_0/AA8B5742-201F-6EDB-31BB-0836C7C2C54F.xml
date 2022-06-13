@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AA8B5742-201F-6EDB-31BB-0836C7C2C54F" containerWithKeyObject="D04A5ADE-05CA-5EAC-7632-4D177E50F26B" localFKIndex="0AD7D997-311C-CFAC-185C-465190C26B0B" name="METODO_PAGO_CITA_FK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>740108A5-66B8-DCD7-D395-286DDD922381</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<referredTableLongName>CITA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B96190D7-5D6C-CD76-DA37-59651CED108B</referredTableID>
+<keyObject>492D83B0-2328-7A95-DF3C-9308232D4F5D</keyObject>
+<referredKeyID>492D83B0-2328-7A95-DF3C-9308232D4F5D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

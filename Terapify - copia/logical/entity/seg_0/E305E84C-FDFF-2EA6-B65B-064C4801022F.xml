@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E305E84C-FDFF-2EA6-B65B-064C4801022F" name="CITA">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:32:23 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="41CBC6B4-4B24-B7D0-0ACB-E7413A4F358A">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:33:33 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="ED4A1C4D-41A9-774B-F02B-987497F559F3">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:33:45 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="9F0235F5-BA52-45A8-46BC-B8859E3FC609">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:34:02 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="93708237-4736-9C86-CF7E-6A39E33F3079">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:34:37 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="5595F221-6122-F5AE-6362-2411900906AA">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:41:07 UTC</createdTime>
+<generatorID>852C43CD-29C9-F8E6-DCF9-0F8CBF0AB24D</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<referedAttribute>795AF5C3-2061-C73A-9DB5-D1A0B3BD531E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3908684C-DC5B-272C-2A72-629FC8323FDA" name="CITA PK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:33:42 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>41CBC6B4-4B24-B7D0-0ACB-E7413A4F358A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

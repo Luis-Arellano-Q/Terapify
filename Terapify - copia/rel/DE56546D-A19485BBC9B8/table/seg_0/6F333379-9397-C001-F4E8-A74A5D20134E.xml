@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F333379-9397-C001-F4E8-A74A5D20134E" name="CLIENTE_CITA">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<ordsAlias>relation_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLIENTE_ID" id="CCA25B91-8EB4-10D2-54D4-46D21AABD649">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2300B7F-EA6A-9CA1-A36D-734278316F3E" referredColumn="3BFE2CF8-8CA1-075F-3B52-1BC9E892A97B"/>
+</associations>
+</Column>
+<Column name="CITA_ID" id="4FB7FC56-6BC7-48EF-94F8-BE0F267B0AEA">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5CF506B3-6912-018D-9196-06040A596401" referredColumn="E8FF77C7-23D1-C22C-3DD4-82C73F3005DA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="732CA289-E39B-EAA9-F2B0-504797077B1F" name="Relation_3_PK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<ownerDesignName>Terapify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCA25B91-8EB4-10D2-54D4-46D21AABD649"/>
+<colUsage columnID="4FB7FC56-6BC7-48EF-94F8-BE0F267B0AEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BB251D1-CF15-F4C9-65F1-74A44F55ADA0" name="Relation_3_CLIENTE_FK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>055A5D40-21E7-9D9C-3732-DAF70A6D511E</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCA25B91-8EB4-10D2-54D4-46D21AABD649"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA367326-75E0-7D15-572D-9BFB6F0640F9" name="Relation_3_CITA_FK">
+<createdBy>KEVIN</createdBy>
+<createdTime>2022-06-13 14:48:18 UTC</createdTime>
+<generatorID>055A5D40-21E7-9D9C-3732-DAF70A6D511E</generatorID>
+<ownerDesignName>Terapify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FB7FC56-6BC7-48EF-94F8-BE0F267B0AEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
