@@ -1,0 +1,210 @@
+:root{
+  --color-primario: #00aae4;
+  --importante-aviso: #414141;
+  --white: #fff;
+  --letra-footer: #ccc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'open sans';
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-primario);
+}
+
+/* Header **** */
+
+.header {
+  height: 60px;
+  width: 100%;
+  box-shadow: 0px 1px 5px 0px rgb(231, 231, 231);
+  display: flex;
+}
+.header div {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.header div h1 a{
+  color: var(--color-primario);
+}
+/* Informacion ****** */
+.container-info {
+  width: 100%;
+  height: auto;
+  padding: 30px 20%;
+  background-color: var(--color-primario);
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Main ****** */
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  place-content: center;
+  width: 1000px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.card-pago {
+  box-shadow: 0px 1px 5px 0px rgb(231, 231, 231);
+  margin: 30px 0;
+  border-radius: 8px;
+  padding: 10px 25px;
+}
+.division-cards {
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 0 10px;
+  grid-column: span 2;
+}
+.card-dato-cita {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card-dato-cita p,
+.card-dato-pago   p {
+  margin: 10px 0;
+}
+
+.card-dato-pago input{
+  width: 250px;
+  height: 40px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.metodo-pago .card-dato-metodo {
+  display: flex;
+  padding: 40px ;
+}
+.card-dato-metodo label img{
+  width: 150px;
+}
+.card-dato-metodo input{
+  position: relative;
+  top: 15px;
+  margin-left: 20px;
+}
+.card-dato-pago input[type="submit"]{
+  width: 180px;
+  height: 40px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.card-dato-tarjeta .form label {
+  margin-bottom: 10px;
+}
+
+.main div,form {
+ display: grid;
+ place-content: center;
+}
+
+.form input,
+.card-dato-pago input {
+  padding: 10px;
+  margin-bottom: 25px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 1px 5px 0px rgb(231, 231, 231);
+}
+
+.form input:focus,
+.card-dato-pago input:focus {
+  border: 1px solid var(--color-primario);
+  border-radius: 3px;
+}
+input[type="submit"] {
+  outline: none;
+  border: none;
+  width: 250px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  background-color: var(--color-primario);
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.form h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--color-primario);
+  font-size: 32px;
+  padding: 0 20px;
+}
+.form p {
+  font-size: 16px;
+  text-align: center;
+}
+.form p a {
+  color: var(--color-primario);
+}
+
+.main .form .terminos {
+  display: flex;
+  width: 400px;
+}
+.main .form .terminos .check{
+  position: relative;
+  top: 20px;
+  margin: 0 10px;
+}
+.terminos label span{
+  color: var(--color-primario);
+}
+
+/* footer ******* */
+
+.footer {
+  margin-bottom: 30px;
+}
+
+.aviso_footer {
+  width: 100%;
+  padding: 40px 50px;
+  background-color: var(--importante-aviso);
+  color: var(--white);
+}
+
+.container div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 0 10px;
+}
+.container div ul{
+  display: flex;
+}
+.container div a{
+  color: var(--letra-footer);
+}
+.container div ul li{
+
+  margin-left: 20px;
+  list-style: none;
+}
+.container div ul li a{
+  color: var(--letra-footer);
+}
+
+.container h6 {
+margin-left: 30px;
+}
