@@ -16,8 +16,9 @@
 <body>
   <header class="header">
     <div>
-      <img src="assets/world.png" alt="logo">
-      <h1><a href="index.php">Terapify</a></h1>
+      <a href="./Pagina web/index.php">
+        <img src="./Pagina web/imagenes/logo.png" alt="logo de la compañia" class="logo-img">
+      </a>
     </div>
     <nav class="nav">
       <ul>

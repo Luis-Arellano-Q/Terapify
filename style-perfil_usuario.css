@@ -25,6 +25,10 @@ li{
 
 /* Header **** */
 
+.header .logo-img{
+  height: 60px
+}
+
 .header {
   height: 60px;
   width: 100%;
