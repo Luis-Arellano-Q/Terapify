@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,19 +24,18 @@
     <nav class="nav">
       <ul>
         <li><a href="">Psicólogos</a></li>
-        <li><a href="./pagar.php">pagar</a></li>
         <li><a href="./conexion-DB/db-cerrar_sesion.php">Cerrar Sesión</a></li>
-        <li><a href="">Perfil</a></li>
+        <li><a href="./perfil_usuario.php">Perfil</a></li>
       </ul>
     </nav>
   </header>
     <?php 
+      include("./conexion-DB/conect.php");
       require_once("./conexion-DB/conect.php");
       $conex = new Conexion();
       $getConection = $conex->Conectar();
       session_start();
       $ID_usu=$_SESSION['ID'];
-
       $sele = "SELECT * FROM cliente where id=$ID_usu";
       $result= oci_parse($getConection, $sele);
       oci_execute($result);
@@ -45,8 +45,8 @@
     <section class="configuracion">
       <div class="configuracion-left">
         <h3>Configuración personal</h3>
-        <button class="btn-pass"><a href="./cambiar_contrasenia.php"> Cambiar contraseña </a><span><img src="./imagenes/candado.png" alt="candado"></span></button>
-        <p>Verifica y/o actualiza tus datos personales aquí. Tus datos son importantes para un seguimiento clínico más completo.</p>
+        <button class="btn-pass"><a href="./perfil_usuario.php"> Perfil</a><span><img src="./imagenes/candado.png" alt="candado"></span></button>
+        <p>Actualiza tu contraseña, escoge una más segura</p>
       </div>
       <div class="configuracion-right">
         <img class="img-avatar avatar-main" src="./imagenes/usuario_avatar.png" alt="avatar">
@@ -54,21 +54,16 @@
       </div>
     </section>
     <form class="form" action="" method="post">
-      <label for="nombre" >Nombre:</label>
-      <input type="text" value="<?php echo $datos['NOMBRE'];?>" name="nombre" placeholder="Nombre" id="nombre" >
+      <label for="actual" >Escribe tu contraseña actual:</label>
+      <input type="password" value="" name="actual" placeholder="Contraseña actual" id="actual" >
 
-      <label for="apellido" >Apellido:</label>
-      <input type="text" value="<?php echo $datos['APELLIDO'];?>" name="apellido" placeholder="Apellido" id="apellido">
+      <label for="nueva" >Escribe tu nueva contraseña:</label>nueva
+      <input type="password" value="" name="nueva" placeholder="Nueva contraseña" id="nueva">
 
-      <label for="telefono" >Telefono:</label>
-      <input type="tel" value="<?php echo $datos['TELEFONO'];?>" name="telefono" placeholder="Telefono" id="telefono">
+      <label for="confirmar" >Confirma tu nueva contraseña:</label>
+      <input type="password" value="" name="confirmar" placeholder="Confirmar contraseña" id="confirmar">
 
-      <label for="email" >Correo electronico:</label>
-      <input type="email" value="<?php echo $datos['CORREO'];?>" name="email" placeholder="Correo electronico"id="email">
-
-      <label for="edad" >Edad:</label>
-      <input type="number" value="<?php echo $datos['EDAD'];?>" name="edad" placeholder="0"id="edad">
-      <input type="submit" value="Guardar" name="guardar">
+      <input type="submit" value="Actualizar contraseña" name="actualizar_pass">
     </form>
   </main>
   <footer class="footer ">
@@ -77,25 +72,45 @@
       </ul>
   </footer>
   <?php
+  // session_start();
+  // $ID_usu=$_SESSION['ID'];
+  // echo $ID_usu;
+  // echo $datos['CLAVE'];
 
-    if(isset($_POST["guardar"])){
+  if(isset($_POST["actualizar_pass"])){
+    
+    $actual= trim($_POST["actual"]);
+    $nueva= trim($_POST["nueva"]);
+    $confirmar= trim($_POST["confirmar"]);
+
+    $consu_pass = "SELECT clave FROM cliente where id=$ID_usu";
+    $pass= oci_parse($getConection, $consu_pass);
+    oci_execute($pass);
+    $dato_pass = oci_fetch_array($pass);
+    $pass_actual= $dato_pass['CLAVE'];
+
+    if($pass_actual == $actual){
+      if($nueva == $confirmar){
+
+        $sql = "UPDATE CLIENTE SET CLAVE = '$nueva' where ID = $ID_usu";
+        $stmt= oci_parse($getConection, $sql);
       
-      $name= trim($_POST["nombre"]);
-      $apellido= trim($_POST["apellido"]);
-      $celular= trim($_POST["telefono"]);
-      $email= trim($_POST["email"]);
-      $edad= $_POST["edad"];
+        if (oci_execute($stmt)){
+          echo "Clave actualizada";
+        }else{
+        echo "ocurrio un error";
+          
+        }
 
-      $sql = "UPDATE CLIENTE SET NOMBRE = '$name', APELLIDO='$apellido', TELEFONO=$celular, CORREO='$email',EDAD=$edad WHERE ID = $ID_usu";
-      $stmt= oci_parse($getConection, $sql);
-        
-      if (oci_execute($stmt)){
-        // echo "actualizacion correcta";
-        header("location:perfil_usuario.php");
       }else{
-        echo "ups un error";
+        echo "las contraseñas no son iguales";
       }
+    }else{
+      echo "contra incorrecta";
+
     }
-  ?>
+    
+  }
+?>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88F1881C-5DE4-61B6-AC51-D31CA4BF9254" name="TARJETA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88F1881C-5DE4-61B6-AC51-D31CA4BF9254" name="DETALLE_TARJETA">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>5456A3A2-97FA-F80B-AD12-7D28C11A06D4</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,7 +12,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>0D5A8DB6-2982-8CEA-A2EE-024C0D0785D9</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -23,7 +23,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>75E8BC64-B9B4-A938-30AF-ACF09A39C661</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -34,7 +34,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>161E6A1B-C1DD-778A-B713-EBC42568C137</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -45,7 +45,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>A57E1CC4-EEB4-C323-860A-5666405A929E</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -57,7 +57,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>C473FF00-492F-ABA7-589C-01A85D9BA728</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -72,7 +72,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>77BD77F5-45B4-5E2D-6D74-23A9C122336A</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -83,13 +83,25 @@
 <colAssociation fkAssociation="924423DF-EFD5-9130-E595-D06168D96FBF" referredColumn="3BFE2CF8-8CA1-075F-3B52-1BC9E892A97B"/>
 </associations>
 </Column>
+<Column name="nombre_propietario" id="3DACE297-F634-6FC8-0C18-EC889EADC207">
+<createdBy>ANGEL</createdBy>
+<createdTime>2022-06-15 17:46:35 UTC</createdTime>
+<generatorID>758A372E-FC51-516E-3A61-206C8070D15F</generatorID>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="B06A688C-8D25-1938-DF92-2AA59DA2004B" name="TARJETA_PK">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>71882E47-B551-2983-8477-1B996620826B</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -100,7 +112,7 @@
 <ind_PK_UK id="96D069C1-8D7E-635D-6462-DED265B12A95" name="TARJETA__IDX">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <relationGeneratorID>1178201F-856A-5D9A-1660-FD80227C4892</relationGeneratorID>
@@ -111,7 +123,7 @@
 <ind_PK_UK id="F62A91F3-3FDE-42C8-B6DC-D006112E613A" name="TARJETA__IDXv1">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <relationGeneratorID>13F04317-AD1D-F930-9331-D6A9BA2D8403</relationGeneratorID>
@@ -119,22 +131,22 @@
 <colUsage columnID="57F991A0-774D-B034-7A51-06DC282669EB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="830CFECA-D519-5568-7ECF-DDF24D81E6CF" name="TARJETA_METODO_PAGO_FK">
+<ind_PK_UK id="830CFECA-D519-5568-7ECF-DDF24D81E6CF" name="DETALLE_TARJETA_METODO_PAGO_FK">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>1178201F-856A-5D9A-1660-FD80227C4892</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EC947AB1-1FC6-0298-BC90-459987EB17ED"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="65F5DA6D-996C-7A79-DDEC-115CBEF4BF40" name="TARJETA_CLIENTE_FK">
+<ind_PK_UK id="65F5DA6D-996C-7A79-DDEC-115CBEF4BF40" name="DETALLE_TARJETA_CLIENTE_FK">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>13F04317-AD1D-F930-9331-D6A9BA2D8403</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

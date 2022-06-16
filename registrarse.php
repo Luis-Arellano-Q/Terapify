@@ -52,6 +52,8 @@
       <h6>&copy;2022 Terapify. Todos los derechos reservados</h4>
     </div>
   </footer>
-  
+  <?php 
+    include("./conexion-DB/db-registro.php")
+  ?>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="94B8649A-3ABB-5962-5B5D-CE61230EE060" containerWithKeyObject="88F1881C-5DE4-61B6-AC51-D31CA4BF9254" localFKIndex="830CFECA-D519-5568-7ECF-DDF24D81E6CF" name="TARJETA_METODO_PAGO_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="94B8649A-3ABB-5962-5B5D-CE61230EE060" containerWithKeyObject="88F1881C-5DE4-61B6-AC51-D31CA4BF9254" localFKIndex="830CFECA-D519-5568-7ECF-DDF24D81E6CF" name="DETALLE_TARJETA_METODO_PAGO_FK">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>1178201F-856A-5D9A-1660-FD80227C4892</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <referredTableLongName>METODO_PAGO</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>D04A5ADE-05CA-5EAC-7632-4D177E50F26B</referredTableID>

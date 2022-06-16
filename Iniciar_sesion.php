@@ -22,6 +22,7 @@
     </div>
   </header>
   <main class="main">
+    
     <form class="form" action="" method="post">
       <h2>Iniciar sesión</h2>
       <input type="email" name="email" placeholder="Correo electronico" required>
@@ -49,6 +50,8 @@
       <h6>&copy;2022 Terapify. Todos los derechos reservados</h4>
     </div>
   </footer>
-  
+  <?php 
+      include("./conexion-DB/db-iniciar_session.php")
+    ?>
 </body>
 </html>

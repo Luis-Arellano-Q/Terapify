@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0147AF2D-72B1-9CB9-2D3C-930FC0AB9148" name="PSICOLOGO">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:28:53 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="ID" id="795AF5C3-2061-C73A-9DB5-D1A0B3BD531E">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:29:04 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -30,7 +30,7 @@
 <Attribute name="nombre" id="A0E6BF44-C466-BCBF-0909-60AF276DD19B">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:29:18 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -43,7 +43,7 @@
 <Attribute name="apellido" id="6FED3476-B47A-553B-C9F3-6E7CDF99D1A6">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:29:35 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -56,10 +56,11 @@
 <Attribute name="fecha_Nacimiento" id="08A2FEE2-FBE3-7126-CCCE-9FA6C3E9E69A">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:29:52 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -68,7 +69,7 @@
 <Attribute name="telefono" id="105DC516-1212-ADC8-A248-087F3BA0D825">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:30:17 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -77,10 +78,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="especialistas" id="023885FE-0DC8-4CFA-D31A-4AB5354AAEDE">
+<Attribute name="especialidad" id="023885FE-0DC8-4CFA-D31A-4AB5354AAEDE">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:30:34 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -90,10 +91,23 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="cedula" id="A4FFC66F-9C83-4B2F-F70C-ADA4724A06A7">
+<createdBy>ANGEL</createdBy>
+<createdTime>2022-06-15 17:25:03 UTC</createdTime>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="correo" id="56723A61-014F-ACF3-9905-DFCEC3AF7429">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:31:38 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -106,10 +120,11 @@
 <Attribute name="genero" id="6A12D225-5F1A-5572-B2D8-ABABFA431D82">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:31:24 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -121,9 +136,10 @@
 <identifier id="5112B25B-C9BE-5A68-14E0-ED0326A6ED2F" name="PSICOLOGO PK">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:29:10 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

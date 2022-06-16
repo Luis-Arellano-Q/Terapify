@@ -1,3 +1,16 @@
+<?php
+  require_once("./conexion-DB/conect.php");
+  $conex = new Conexion();
+  $getConection = $conex->Conectar();
+  session_start();
+  $ID_usu=$_SESSION['ID'];
+
+  $sele = "SELECT * FROM cliente where id=$ID_usu";
+      $result= oci_parse($getConection, $sele);
+      oci_execute($result);
+      $datos = oci_fetch_array($result);
+  // echo $ID_usu;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +35,7 @@
     </div>
   </header>
   <div class="container-info">
-    <p>Muy bien, <span>--paciente.---</span><br> 
+    <p>Muy bien, <span><?php echo $datos['NOMBRE'];?></span>.<br> 
 Ya sólo tienes que realizar el pago de tu cita con <span>--psicólogo--</span> para poder llevarla a cabo.</p>
   </div>
   <main class="main">
@@ -61,12 +74,16 @@ Ya sólo tienes que realizar el pago de tu cita con <span>--psicólogo--</span> 
       <h3>Agregar tarjeta</h3>
       <div class="card-dato-tarjeta card-pago">
         <form class="form" action="" method="post">
-          <label for="nombre-tarjeta">Nombre del propietario</label>
-          <input type="text" name="nombre-tarjeta" placeholder="Nombre Propietario" required>
-          <label for="nombre-tarjeta">Numero de tarjeta</label>
-          <input type="number" maxlenght="16" name="numero_tarjeta" placeholder="Numero de tarjeta" required>
+          <label for="nom_tarjeta">Nombre del propietario</label>
+          <input type="text" name="nom_tarjeta" placeholder="Nombre Propietario" required id="nom_tarjeta">
+
+          <label for="num_tarjeta">Numero de tarjeta</label>
+          <input type="number" maxlenght="16" name="num_tarjeta" placeholder="Numero de tarjeta" required id="num_tarjeta">
+
           <label for="fecha_ven">Fecha de vencimiento</label>
-          <input type="" name="fecha_ven" id="fecha_ven" placeholder="MM/AA" required>
+          <input type="number" name="mes" id="fecha_ven" placeholder="Mes" required id="fecha_ven">
+          <input type="number" placeholder="Año" name="anio" required id="fecha_ven">
+
           <label for="cvc">Código de seguridad</label>
           <input type="number" name="cvc" id="cvc" placeholder="CVC" required>
           <div class="terminos">
@@ -88,6 +105,37 @@ Ya sólo tienes que realizar el pago de tu cita con <span>--psicólogo--</span> 
       <h6>&copy;2022 Terapify. Todos los derechos reservados</h4>
     </div>
   </footer>
-  
+  <?php
+  if(isset($_POST["pagar"])){
+
+    $nom_tarjeta= trim($_POST["nom_tarjeta"]);
+    $num_tarjeta= trim($_POST["num_tarjeta"]);
+    $mes= trim($_POST["mes"]);
+    $anio= trim($_POST["anio"]);
+    $cvc= trim($_POST["cvc"]);
+
+    // $consu = "SELECT correo FROM cliente where correo='$email'";
+    // $consul= oci_parse($getConection, $consu);
+    // oci_execute($consul);
+
+    // $ID_consul= oci_fetch_array($consul);
+    // $email_usu=$ID_consul['CORREO'];
+
+
+    // if($email_usu==$email){
+    //   echo "ya esta registrado";
+    // }   
+    // else{  
+      $sql = "INSERT INTO DETALLE_TARJETA VALUES (NULL,$num_tarjeta,TO_DATE('$mes."/".$anio','MM/YYYYY'),$cvc,$ID_cita,$ID_usu,$nom_tarjeta)";
+      $stmt= oci_parse($getConection, $sql);
+        
+      if (oci_execute($stmt)){
+        echo "Pago realizado";
+      }else{
+        echo "error";
+      }
+    }
+  // }
+?>
 </body>
 </html>

@@ -102,7 +102,7 @@ li{
   margin: 0 auto;
   display: grid;
   padding: 35px 70px;
-  border-radius: 30px 30% 30% 30px;
+  border-radius: 30px 50% 50% 30px;
 }
 .form input,select {
   margin-top: 10px;

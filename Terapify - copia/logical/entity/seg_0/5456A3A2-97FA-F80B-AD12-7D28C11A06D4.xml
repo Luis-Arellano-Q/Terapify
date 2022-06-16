@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5456A3A2-97FA-F80B-AD12-7D28C11A06D4" name="TARJETA">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5456A3A2-97FA-F80B-AD12-7D28C11A06D4" name="DETALLE_TARJETA">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:35:50 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="ID" id="0D5A8DB6-2982-8CEA-A2EE-024C0D0785D9">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:36:24 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -27,10 +27,23 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="nombre_propietario" id="758A372E-FC51-516E-3A61-206C8070D15F">
+<createdBy>ANGEL</createdBy>
+<createdTime>2022-06-15 17:45:51 UTC</createdTime>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="numero" id="75E8BC64-B9B4-A938-30AF-ACF09A39C661">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:36:34 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -42,7 +55,7 @@
 <Attribute name="fecha_vencimiento" id="161E6A1B-C1DD-778A-B713-EBC42568C137">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:37:01 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -54,7 +67,7 @@
 <Attribute name="CVC" id="A57E1CC4-EEB4-C323-860A-5666405A929E">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:37:19 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -68,7 +81,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:40:21 UTC</createdTime>
 <generatorID>1178201F-856A-5D9A-1660-FD80227C4892</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -82,7 +95,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:40:34 UTC</createdTime>
 <generatorID>13F04317-AD1D-F930-9331-D6A9BA2D8403</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -97,9 +110,10 @@
 <identifier id="71882E47-B551-2983-8477-1B996620826B" name="TARJETA_CREDITO PK">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:36:32 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

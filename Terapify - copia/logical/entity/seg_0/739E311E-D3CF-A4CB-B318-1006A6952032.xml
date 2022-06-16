@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="739E311E-D3CF-A4CB-B318-1006A6952032" name="CLIENTE">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:22:56 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="ID" id="3108776B-B1C3-E3F6-79C9-5AF0012A1CF0">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:23:02 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -30,7 +30,7 @@
 <Attribute name="nombre" id="042E8B50-1F83-DB1F-3BBA-95EF2B03DDDA">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:24:39 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -43,7 +43,7 @@
 <Attribute name="apellido" id="3F6E496D-2E88-50C6-B253-6EE487C2DFF0">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:25:14 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -56,10 +56,11 @@
 <Attribute name="fecha_Nacimiento" id="3CCD4B01-820F-60A8-25F7-861EFF9B616B">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:25:43 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -68,7 +69,7 @@
 <Attribute name="correo" id="BFAC3DB8-92D0-B508-6FD2-2072DF3B790A">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:26:01 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -81,7 +82,7 @@
 <Attribute name="telefono" id="806ECEA2-DE9B-FCF3-A6C7-7506EA91F9F7">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:26:22 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -90,10 +91,23 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="clave" id="D078294C-1F72-E35C-7387-14A5A005BBEA">
+<createdBy>ANGEL</createdBy>
+<createdTime>2022-06-16 03:48:15 UTC</createdTime>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<engineerTo>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="genero" id="A70A378C-1ED4-6D1F-0CF0-D5B165A2F1AB">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:26:41 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <engineerTo>
 <item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
 </engineerTo>
@@ -109,9 +123,10 @@
 <identifier id="DCF07D33-A5AA-97FB-96C2-F05F028A7AA4" name="CLIENTE PK">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:24:37 UTC</createdTime>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="true"/>
+<item key="DE56546D-83FD-79C1-EC13-A19485BBC9B8" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
