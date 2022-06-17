@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <script src="//code.tidio.co/ov4ngkqogb72kllfyet3bxv6mn8w1djw.js" async></script>
 </head>
 
 <body>
@@ -193,5 +194,6 @@
         </div>
         
     </footer>
+    
 </body>
 </html>

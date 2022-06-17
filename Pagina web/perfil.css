@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'open sans';
+    margin:0;
+}
+/*Menu*/
+header{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.logo{
+    display: 50px;
+    align-items: center;
+
+}
+.logo img{
+    height: 75px;
+    padding-left: 50px;
+    
+}
+a{
+    text-decoration: none;
+    color:black;
+
+}
+nav a {
+    font-weight: 600;
+    padding-right: 75px;
+}
+.boton{
+    background-color: #00aae4;
+    color:#fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 45px;
+    
+
+}
+
+/*Contenedor*/
+.Contenedor{
+    background: #e6e4e4;
+    padding-top: 50px;
+    height: 600px;
+}
+/*boton de agendar cita*/
+input{
+    width: 30%;
+	padding:10px 30px;
+	margin-top: 12px;
+	font-size: 16px;
+    background-color:  #00aae4;
+    border-radius: 10px;
+
+}
+input[type='submit']{
+	color: #fff;
+	margin: 0px 800px;
+	margin-top: 22px;
+    border-color: #00aae4;  
+	
+}
+
+/*Perfil*/
+.perfil{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    
+    
+    
+}
+.perfil img{
+    width: 150px;
+    height: 150px;
+    clip-path: circle();
+    margin-left:50px;
+    margin-right:50px;
+    transition: all 400ms ease;
+  
+    
+    
+}
+.perfil img:hover{
+    transform: translateY(-2%);
+    transition: all 400ms ease;
+}
+.datos{  
+    width: 400px;
+    margin: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transform: all 400mns ease;
+} 
+.datos:hover{
+    box-shadow:  5px 5px 20px rgba(0, 0,0, 0.4);
+    transform: translate(-3%);
+}  
+/*Area de atencion*/
+.area_de_atencion{
+    padding-left: 250px;
+    padding-top: 30px;
+
+}
+.atencion{
+    width: 400px;
+    margin: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transform: all 400mns ease;
+
+}
+.atencion:hover{
+    box-shadow:  5px 5px 20px rgba(0, 0,0, 0.4);
+    transform: translate(-3%);
+}
+/*formacion academica*/
+.formacion{
+     margin: -300px 750px;
+     
+}
+.formacion_academica{
+    width: 500px;
+    margin: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transform: all 400mns ease;
+}
+.formacion_academica:hover{
+    box-shadow:  5px 5px 20px rgba(0, 0,0, 0.4);
+    transform: translate(-3%);
+}
+/*importante*/
+.about-importante{
+    background: #414141;
+    padding: 40px 0 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-importante{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    
+}
+
+.content-importante{
+    text-align: center;
+}
+
+.content-importante p{
+    color: #ccc;
+}
+/*---CONTENIDOFINAL---*/
+footer{
+    background: #fff;
+    padding-bottom: 100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+  padding-left: 50px;  
+}
+
+.content-foo{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: #fff;
+    padding-top: 70px;
+
+}
+
+.content-foo h5{
+    color: #ccc;
+    padding-left: 20px;
+}
+.content-foo a{
+    color: #b1afaf;
+    padding-left: 250px;
+    font-size: 15px;
+}
+.content-terminos{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+
+}
+.content-terminos h5{
+    color: #ccc;
+    padding-left: 20px;
+}
+.content-terminos a{
+    color: #b1afaf;
+    padding-left: 375px;
+    font-size: 15px;
+    
+}
