@@ -1,0 +1,148 @@
+:root{
+  --color-primario: #00aae4;
+  --importante-aviso: #414141;
+  --white: #fff;
+  --letra-footer: #ccc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'open sans';
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-primario);
+}
+
+/* Header **** */
+.header .logo-img{
+  height: 60px
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  box-shadow: 0px 1px 5px 0px rgb(231, 231, 231);
+  display: flex;
+}
+.header div {
+  display: flex;
+  align-items: center;
+}
+.header div h1 a{
+  color: var(--color-primario);
+}
+
+
+/* Main ****** */
+
+.main {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 90vh;
+}
+
+.main div img {
+  width: 700px;
+}
+.main div,form {
+ display: grid;
+ place-content: center;
+}
+
+.form input {
+  padding: 10px;
+  margin-bottom: 25px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 1px 5px 0px rgb(231, 231, 231);
+}
+
+.form input:focus {
+  border: 1px solid var(--color-primario);
+  border-radius: 3px;
+}
+.form input[type="submit"] {
+  width: 250px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  background-color: var(--color-primario);
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.form h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--color-primario);
+  font-size: 32px;
+  padding: 0 20px;
+}
+.form p {
+  font-size: 16px;
+  text-align: center;
+}
+.form p a {
+  color: var(--color-primario);
+}
+
+.main .form .terminos {
+  display: flex;
+  width: 400px;
+}
+.main .form .terminos .check{
+  position: relative;
+  top: 20px;
+  margin: 0 10px;
+}
+.terminos label span{
+  color: var(--color-primario);
+}
+
+/* footer ******* */
+
+.footer {
+  margin-bottom: 30px;
+}
+
+.aviso_footer {
+  width: 100%;
+  padding: 40px 50px;
+  background-color: var(--importante-aviso);
+  color: var(--white);
+}
+
+.container div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 0 10px;
+}
+.container div ul{
+  display: flex;
+}
+.container div a{
+  color: var(--letra-footer);
+}
+.container div ul li{
+
+  margin-left: 20px;
+  list-style: none;
+}
+.container div ul li a{
+  color: var(--letra-footer);
+}
+
+.container h6 {
+margin-left: 30px;
+}

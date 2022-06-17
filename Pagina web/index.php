@@ -21,8 +21,8 @@
         </div>
         <nav>
             <a href="#">Psicólogos</a>
-            <a href="precio.html">Precio</a>
-            <a href="#" class="boton">Iniciar Sesion</a>
+            <a href="precio.php">Precio</a>
+            <a href="../Iniciar_sesion.php" class="boton">Iniciar Sesion</a>
             
          </nav>
         

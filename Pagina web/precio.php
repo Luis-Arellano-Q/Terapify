@@ -17,8 +17,8 @@
         </div>
         <nav>
             <a href="#">Psicólogos</a>
-            <a href="index.html">Inicio</a>
-            <a href="#" class="boton">Iniciar Sesion</a>
+            <a href="index.php">Inicio</a>
+            <a href="../Iniciar_sesion.php" class="boton">Iniciar Sesion</a>
             
          </nav>
     </header>

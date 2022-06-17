@@ -3,7 +3,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>739E311E-D3CF-A4CB-B318-1006A6952032</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,7 +12,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>3108776B-B1C3-E3F6-79C9-5AF0012A1CF0</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -23,7 +23,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>042E8B50-1F83-DB1F-3BBA-95EF2B03DDDA</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -35,7 +35,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>3F6E496D-2E88-50C6-B253-6EE487C2DFF0</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -47,7 +47,8 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>3CCD4B01-820F-60A8-25F7-861EFF9B616B</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -58,7 +59,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>BFAC3DB8-92D0-B508-6FD2-2072DF3B790A</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -70,7 +71,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>806ECEA2-DE9B-FCF3-A6C7-7506EA91F9F7</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -81,7 +82,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>A70A378C-1ED4-6D1F-0CF0-D5B165A2F1AB</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -90,13 +91,25 @@
 <ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="clave" id="4617AAA6-29E1-C5BD-208D-07383413A8A3">
+<createdBy>ANGEL</createdBy>
+<createdTime>2022-06-16 03:57:47 UTC</createdTime>
+<generatorID>D078294C-1F72-E35C-7387-14A5A005BBEA</generatorID>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="820C313B-D70B-14EE-3F39-760DB02F7560" name="CLIENTE_PK">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>DCF07D33-A5AA-97FB-96C2-F05F028A7AA4</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>

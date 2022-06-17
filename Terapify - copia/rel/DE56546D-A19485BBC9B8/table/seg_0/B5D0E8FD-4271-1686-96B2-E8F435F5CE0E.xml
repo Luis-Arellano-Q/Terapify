@@ -3,7 +3,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>0147AF2D-72B1-9CB9-2D3C-930FC0AB9148</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,7 +12,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>795AF5C3-2061-C73A-9DB5-D1A0B3BD531E</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -23,7 +23,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>A0E6BF44-C466-BCBF-0909-60AF276DD19B</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -35,7 +35,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>6FED3476-B47A-553B-C9F3-6E7CDF99D1A6</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -47,7 +47,8 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>08A2FEE2-FBE3-7126-CCCE-9FA6C3E9E69A</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -58,18 +59,18 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>105DC516-1212-ADC8-A248-087F3BA0D825</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="especialistas" id="7E362ADC-F30B-3A5D-A3B8-0CF2F6426766">
+<Column name="especialidad" id="7E362ADC-F30B-3A5D-A3B8-0CF2F6426766">
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>023885FE-0DC8-4CFA-D31A-4AB5354AAEDE</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -81,7 +82,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>56723A61-014F-ACF3-9905-DFCEC3AF7429</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -93,12 +94,25 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>6A12D225-5F1A-5572-B2D8-ABABFA431D82</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10 CHAR</dataTypeSize>
 <ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cedula" id="9FEA14E4-2D5F-BA68-CF48-484E69C14C00">
+<createdBy>ANGEL</createdBy>
+<createdTime>2022-06-15 17:27:24 UTC</createdTime>
+<generatorID>A4FFC66F-9C83-4B2F-F70C-ADA4724A06A7</generatorID>
+<ownerDesignName>Terapify - copia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -107,7 +121,7 @@
 <createdBy>KEVIN</createdBy>
 <createdTime>2022-06-13 14:48:18 UTC</createdTime>
 <generatorID>5112B25B-C9BE-5A68-14E0-ED0326A6ED2F</generatorID>
-<ownerDesignName>Terapify</ownerDesignName>
+<ownerDesignName>Terapify - copia</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
