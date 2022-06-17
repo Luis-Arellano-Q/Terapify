@@ -70,7 +70,7 @@
         <p><?php echo $dato_psico["NOMBRE"]." ".$dato_psico["APELLIDO"]?></p>
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
-        <a href="" class="boton">Agendar cita</a>
+        <a href="./servicio.php" class="boton">Agendar cita</a>
         <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>">Ver perfil</a>
       </div>
       <div class="card_container">
@@ -84,7 +84,7 @@
         <p><?php echo $dato_psico["NOMBRE"]." ".$dato_psico["APELLIDO"]?></p>
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
-        <a href="" class="boton">Agendar cita</a>
+        <a href="./servicio.php" class="boton">Agendar cita</a>
         <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
@@ -98,7 +98,7 @@
         <p><?php echo $dato_psico["NOMBRE"]." ".$dato_psico["APELLIDO"]?></p>
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
-        <a href="" class="boton">Agendar cita</a>
+        <a href="./servicio.php" class="boton">Agendar cita</a>
         <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
@@ -112,7 +112,7 @@
         <p><?php echo $dato_psico["NOMBRE"]." ".$dato_psico["APELLIDO"]?></p>
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
-        <a href="" class="boton">Agendar cita</a>
+        <a href="./servicio.php" class="boton">Agendar cita</a>
         <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
@@ -126,7 +126,7 @@
         <p><?php echo $dato_psico["NOMBRE"]." ".$dato_psico["APELLIDO"]?></p>
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
-        <a href="" class="boton">Agendar cita</a>
+        <a href="./servicio.php" class="boton">Agendar cita</a>
         <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
@@ -140,7 +140,7 @@
         <p><?php echo $dato_psico["NOMBRE"]." ".$dato_psico["APELLIDO"]?></p>
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
-        <a href="" class="boton">Agendar cita</a>
+        <a href="./servicio.php" class="boton">Agendar cita</a>
         <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
@@ -154,7 +154,7 @@
         <p><?php echo $dato_psico["NOMBRE"]." ".$dato_psico["APELLIDO"]?></p>
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
-        <a href="" class="boton">Agendar cita</a>
+        <a href="./servicio.php" class="boton">Agendar cita</a>
         <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
@@ -168,7 +168,7 @@
         <p><?php echo $dato_psico["NOMBRE"]." ".$dato_psico["APELLIDO"]?></p>
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
-        <a href="" class="boton">Agendar cita</a>
+        <a href="./servicio.php" class="boton">Agendar cita</a>
         <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       

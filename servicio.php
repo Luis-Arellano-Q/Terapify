@@ -24,7 +24,7 @@
     }
     .Servicio{
         padding-left: 400px;
-        background-color: #DCDCDC;
+        background-color: #F2F8FD;
         height: 660px;
     }
    
@@ -97,7 +97,7 @@
              <h3>S/130.0</h3>
         </div>
         <div class="cita">
-            <a href="#"> CITAS INDIVIDUALES</a>
+            <a href="#">4 CITAS INDIVIDUALES</a>
              <h3>S/280.0</h3>
         </div>
         <div class="cita_pareja">
