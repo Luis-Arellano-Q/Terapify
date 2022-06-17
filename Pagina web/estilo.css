@@ -133,6 +133,7 @@ nav a {
 }
 .Contenedor-sobre-nosotros img:hover{
     transform: translateY(-2%);
+    transition: all 400ms ease;
 }
 .Contenedor-sobre-nosotros p{
     text-align: left;
