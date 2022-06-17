@@ -18,6 +18,67 @@ a {
   cursor: pointer;
   color: var(--color-primario);
 }
+/* mensajes php */
+
+.alert {
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 250px);
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  justify-content: center;
+  /* color: var(--importante-aviso); */
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  /* animation: name duration 
+  timing-function delay iteration-count 
+  direction fill-mode play-state */
+  animation: alerta 100s ;
+}
+.alert span {
+  background-image: url('./assets/wrong.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.alert .warning {
+  background-image: url('./assets/warning.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+.alert .check {
+  background-image: url('./assets/check.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.error {
+  color: var(--importante-aviso);
+  background-color: rgb(255 255 47 / 50%);
+}
+.ok {
+  color: var(--importante-aviso);
+  background-color: rgb(42 231 95 / 48%);
+}
+.bad {
+  color: var(--importante-aviso);
+  background-color: #ff5959db;
+}
+@keyframes alerta {
+  0%{opacity: 1;}
+  4%{opacity: 1;}
+  5%{opacity: 0;}
+  100%{opacity: 0;}
+}
+
 
 /* Header **** */
 .header .logo-img{

@@ -29,7 +29,12 @@
             header("location:perfil_usuario.php");
             
           }else{
-            echo "datos incorrectos";
+            ?>
+            <div class="alert bad">
+              <span></span>
+              <h3>¡Email o contraseña incorrecta!</h3>
+            </div>
+            <?php
           }
         }
       }

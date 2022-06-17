@@ -22,6 +22,68 @@ a {
 li{
   list-style: none;
 }
+/* alertas php *************** */
+
+.alert {
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 250px);
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  justify-content: center;
+  /* color: var(--importante-aviso); */
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  /* animation: name duration 
+  timing-function delay iteration-count 
+  direction fill-mode play-state */
+  animation: alerta 100s ;
+}
+.alert span {
+  background-image: url('./assets/wrong.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.alert .warning {
+  background-image: url('./assets/warning.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+.alert .check {
+  background-image: url('./assets/check.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.error {
+  color: var(--importante-aviso);
+  background-color: rgb(255 255 47 / 50%);
+}
+.ok {
+  color: var(--importante-aviso);
+  background-color: rgb(42 231 95 / 48%);
+}
+.bad {
+  color: var(--importante-aviso);
+  background-color: #ff5959db;
+}
+@keyframes alerta {
+  0%{opacity: 1;}
+  4%{opacity: 1;}
+  5%{opacity: 0;}
+  100%{opacity: 0;}
+}
+
+
 
 /* Header **** */
 
@@ -61,7 +123,46 @@ li{
 .img-avatar {
   border-radius: 50%;
 }
-
+.psico .psico_avatar{
+  width: 60px;
+  margin-right: 20px;
+}
+.boton{
+  background-color: #00aae4;
+  color:#fff;
+  border-radius: 10px;
+  padding: 5px 30px;
+  margin-bottom: 5px;
+  height: 40px;
+}
+/* cards container psicologos ********************** */
+.section_cards{
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin: 0 auto;
+  place-content: center;
+}
+.card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 1px 5px 0px rgb(231, 231, 231);
+  width: 230px;
+  height: 370px;
+  text-align: center;
+  padding: 15px ;
+  margin-bottom: 20px;
+}
+.card_container img {
+  width: 150px;
+  margin: 0 auto;
+}
+.card_container img,
+.card_container p {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
 
 /* Main ****** */
 
@@ -86,6 +187,7 @@ li{
   box-shadow: 0px 2px 5px 3px rgb(231 231 231);
   cursor: pointer;
   font-size: 16px;
+  width: 200px;
 }
 
 .btn-pass span img {

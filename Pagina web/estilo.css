@@ -31,7 +31,7 @@ body {
     background: linear-gradient(to right, hsla(225, 25%, 70%, 0.452), hsla(0, 0%, 100%, 0)),url(imagenes/mujer-feliz-levantando-las-manos1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
-    position:relative
+    position:relative;
     
 }
 .cuadrado{
@@ -89,6 +89,8 @@ nav a {
     align-items: center;
     justify-content: center;/*titulo en el centro de la image*/
     flex-direction: column;
+    padding: auto 50px;
+
 }
 .portada h1{
     font-size: 50px;

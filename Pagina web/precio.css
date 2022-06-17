@@ -25,6 +25,9 @@ header{
     padding-left: 50px;
     
 }
+.img-avatar {
+    width: 50px;
+}
 a{
     text-decoration: none;
     color:black;
@@ -34,14 +37,16 @@ nav a {
     font-weight: 600;
     padding-right: 75px;
 }
+.nav_menu {
+    position: relative;
+    top: -15px;
+}
 .boton{
     background-color: #00aae4;
     color:#fff;
     border-radius: 10px;
     padding: 10px 30px;
     margin: 45px;
-    
-
 }
 
 .contenedor{

@@ -16,9 +16,27 @@
             <img src="imagenes/logo.png" alt="logo de la compañia" class="logo-img">
         </div>
         <nav>
-            <a href="#">Psicólogos</a>
-            <a href="index.php">Inicio</a>
-            <a href="../Iniciar_sesion.php" class="boton">Iniciar Sesion</a>
+            <a class="nav_menu" href="../Psicologos.php">Psicólogos</a>
+            <!-- <a href="index.php">Inicio</a> -->
+            <a class="nav_menu" href="">Precios</a>
+            <?php
+                require_once("../conexion-DB/conect.php");
+                $conex = new Conexion();
+                $getConection = $conex->Conectar();
+                session_start();
+                $ID_usu=$_SESSION['ID'];
+                if($ID_usu!=null){
+                        ?>
+                        <a href="../perfil_usuario.php"><img class="img-avatar avatar-main" src="../imagenes/usuario_avatar.png" alt="avatar"></a>
+                        <?php
+                }else{
+                        ?>
+                        <a href="../Iniciar_sesion.php" class="boton">Iniciar Sesion</a>
+                        <?php
+                    }
+                
+
+            ?>
             
          </nav>
     </header>
@@ -31,7 +49,7 @@
                 <p>✔ Ampliaras la informacion sobre lo que te ocurre.</p>
                 <p>✔ Se te hará una propuesta de tratamiento.</p>
                 <h1>S/80</h1>
-                <input type="submit" value="Comprar" class="button">
+                <a href="../psicologos.php"><input type="submit" value="Lo quiero!!" class="button"></a>
                 <div class="Compromiso">
                 <h5>Compromiso de confidencialidad y garantia de calidad.</h5>
                 </div>
@@ -42,7 +60,7 @@
                 <p>✔ Ampliaras la informacion sobre lo que te ocurre</p>
                 <p>✔ Se te hará una propuesta de tratamiento.</p>
                 <h1>S/280</h1>
-                <input type="submit" value="Comprar" class="button">
+                <a href="../psicologos.php"><input type="submit" value="Lo quiero!!" class="button"></a>
                 <div class="Compromiso">
                 <h5>Compromiso de confidencialidad y garantia de calidad.</h5>
                 </div>
@@ -53,7 +71,7 @@
                 <p>✔ Ampliaras la informacion sobre lo que te ocurre</p>
                 <p>✔ Se te hará una propuesta de tratamiento.</p>
                 <h1>S/130</h1>
-                <input type="submit" value="Comprar" class="button">
+                <a href="../psicologos.php"><input type="submit" value="Lo quiero!!" class="button"></a>
                 <div class="Compromiso">
                 <h5>Compromiso de confidencialidad y garantia de calidad.</h5>
                 </div>
@@ -64,7 +82,7 @@
                 <p>✔ Ampliaras la informacion sobre lo que te ocurre</p>
                 <p>✔ Se te hará una propuesta de tratamiento.</p>
                 <h1>S/520</h1>
-                <input type="submit" value="Comprar" class="button">
+                <a href="../psicologos.php"><input type="submit" value="Lo quiero!!" class="button"></a>
                 <h5>Compromiso de confidencialidad y garantia de calidad.</h5>
                 
             </div>

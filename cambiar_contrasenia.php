@@ -45,7 +45,7 @@
     <section class="configuracion">
       <div class="configuracion-left">
         <h3>Configuración personal</h3>
-        <button class="btn-pass"><a href="./perfil_usuario.php"> Perfil</a><span><img src="./imagenes/candado.png" alt="candado"></span></button>
+        <button class="btn-pass"><a href="./perfil_usuario.php"> Perfil</a></button>
         <p>Actualiza tu contraseña, escoge una más segura</p>
       </div>
       <div class="configuracion-right">
@@ -96,17 +96,37 @@
         $stmt= oci_parse($getConection, $sql);
       
         if (oci_execute($stmt)){
-          echo "Clave actualizada";
+          ?>
+          <div class="alert ok">
+            <span class="check"></span>
+            <h3>¡Clave actualizada correctamente!</h3>
+          </div>
+        <?php
         }else{
-        echo "ocurrio un error";
+          ?>
+          <div class="alert bad">
+            <span></span>
+            <h3>¡Ups ha ocurrido un error!</h3>
+          </div>
+        <?php
           
         }
 
       }else{
-        echo "las contraseñas no son iguales";
+        ?>
+        <div class="alert error">
+          <span class="warning"></span>
+          <h3>Las contraseñas no coinciden</h3>
+        </div>
+      <?php
       }
     }else{
-      echo "contra incorrecta";
+      ?>
+        <div class="alert bad">
+          <span></span>
+          <h3>¡Contraseña incorrecta!</h3>
+        </div>
+        <?php
 
     }
     

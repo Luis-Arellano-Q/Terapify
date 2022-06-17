@@ -22,7 +22,8 @@
     </div>
     <nav class="nav">
       <ul>
-        <li><a href="">Psicólogos</a></li>
+        <li><a href="./Psicologos.php">Psicólogos</a></li>
+        <li><a href="./Pagina web/precio.php">Precios</a></li>
         <li><a href="./pagar.php">pagar</a></li>
         <li><a href="./conexion-DB/db-cerrar_sesion.php">Cerrar Sesión</a></li>
         <li><a href="">Perfil</a></li>

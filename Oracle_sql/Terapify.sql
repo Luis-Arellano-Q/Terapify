@@ -103,20 +103,44 @@ ALTER TABLE cliente_cita
 --CREACION DE SECUENCIA
 CREATE SEQUENCE INCREMENTO START WITH 1 INCREMENT BY 1;
 
--- TRIGER PARA AUTO INCREMENTO
+-- TRIGER PARA AUTO INCREMENTO PARA CLIETNTE
 CREATE OR REPLACE TRIGGER TRG_CLIENTE BEFORE INSERT ON CLIENTE FOR EACH ROW 
 BEGIN 
     SELECT INCREMENTO.NEXTVAL INTO :NEW.ID FROM DUAL;
 END;
 
+-- TRIGER PARA AUTO INCREMENTO PARA DETALLE TARJETA
+CREATE OR REPLACE TRIGGER TRG_TERJETA BEFORE INSERT ON DETALLE_TARJETA FOR EACH ROW 
+BEGIN 
+    SELECT INCREMENTO.NEXTVAL INTO :NEW.ID FROM DUAL;
+END;
+
+-- TRIGER PARA AUTO INCREMENTO PARA pSICOLOGO
+CREATE OR REPLACE TRIGGER TRG_PSICOLOGO BEFORE INSERT ON PSICOLOGO FOR EACH ROW 
+BEGIN 
+    SELECT INCREMENTO.NEXTVAL INTO :NEW.ID FROM DUAL;
+END;
+
+-- datos de psicologos
+INSERT INTO PSICOLOGO VALUES (NULL,'Marcelo','Paredes Ezpinoza',91234561,'Depresion','mpezpinoza@terapify.com',98877665,'marcelo123');
+INSERT INTO PSICOLOGO VALUES (NULL,'Adrian','Mendoza Perez',915445645,'Terapia de pareja','amperez@terapify.com',87658776,'adrian123');
+INSERT INTO PSICOLOGO VALUES (NULL,'Juan Carlos','Quispe Rodrigez',912233434,'Adiccion','jrodrigez@terapify.com',54436554,'juan123');
+INSERT INTO PSICOLOGO VALUES (NULL,'Jualiana','Valencia Farfan',987988798,'Ansiedad','jfarfan@terapify.com',43213221,'juliana123');
+INSERT INTO PSICOLOGO VALUES (NULL,'Maria ','Vernilla Cruz',987768776,'Terapia sexual','mcruz@terapify.com',12989182,'maria123');
+INSERT INTO PSICOLOGO VALUES (NULL,'Susana','Horia Roja',954655465,'Autoestima','sroja@terapify.com',12398702,'susuna123');
+INSERT INTO PSICOLOGO VALUES (NULL,'Javier','Benavides Aguilar',92332334,'Duelo','jaguilar@terapify.com',34233423,'javier123');
+INSERT INTO PSICOLOGO VALUES (NULL,'Diana','Aguilar Vera',9323223,'Orientacion academica','dvera@terapify.com',12233445,'diana123');
+
+
 
 
 select * from cliente;
+select * from psicologo;
 DELETE cliente where nombre = 'ANGELO';
 DELETE cliente where nombre = 'LUIS';
 DELETE cliente where nombre = 'luis';
 
-INSERT INTO "CLIENTE" VALUES (NULL,'luis','Prees',NULL,'lp@gmail.com',94323232,NULL,'lp');
+INSERT INTO "CLIENTE" VALUES (NULL,'juan','Prees',NULL,'lp@gmail.com',94323232,NULL,'123',23);
 
 UPDATE "TERAPIFY"."CLIENTE" SET NOMBRE = 'Angelo', FECHA_NACIMIENTO = TO_DATE('2005-04-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 
 GENERO = 'hombre', EDAD = '17' WHERE ID = '11';
@@ -129,5 +153,7 @@ VALUES ('3', 'Juan', 'peres|', 'lp@gmail.com', '912312312', 'lp123')
 SELECT correo from cliente where exists(select correo from cliente where correo='luis@gmail.com');
 
 
-UPDATE CLIENTE SET NOMBRE = 'angelo', APELLIDO = 'qui', FECHA_NACIMIENTO = TO_DATE('09-05-2001', 'DD-MM-YYYY'),  CORREO = 'cmamut@gmail.com', 
-TELEFONO = 51942342,  GENERO = 'hombre', EDAD = '21' WHERE ID = '11');
+UPDATE CLIENTE SET NOMBRE = 'angelo', APELLIDO = 'qui',  CORREO = 'cmamut@gmail.com', 
+TELEFONO = 51942342, EDAD = '21' WHERE ID = '11';
+
+SELECT id FROM cliente where correo='arellano_18angel@hotmail.com';

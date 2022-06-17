@@ -20,7 +20,8 @@
         </div>
         <nav>
             <a href="#">Psicólogos</a>
-            <a href="precio.php">Precio</a>
+            <a href="precio.php">Precios</a>
+            <a href="../registrarse.php">Registrarse</a>
             <a href="../Iniciar_sesion.php" class="boton">Iniciar Sesion</a>
             
          </nav>

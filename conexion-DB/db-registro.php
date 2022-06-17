@@ -26,7 +26,12 @@
 
 
     if($email_usu==$email){
-      echo "ya esta registrado";
+      ?>
+      <div class="alert error">
+        <span class="warning"></span>
+        <h3>El email ya ha sido registrado</h3>
+      </div>
+    <?php
     }   
     else{  
       $sql = "INSERT INTO CLIENTE VALUES (NULL,'$name','$apellido',NULL,'$email',$celular,NULL,'$clave',NULL)";
@@ -35,14 +40,14 @@
       if (oci_execute($stmt)){
         ?>
         <div class="alert ok">
-          <img src="assets/check.png" alt="">
+          <span class="check"></span>
           <h3>¡Te has registrado correctamente!</h3>
         </div>
         <?php
       }else{
         ?>
         <div class="alert bad">
-          <img src="assets/wrong.png" alt="">
+          <span></span>
           <h3>¡Ups ha ocurrido un error!</h3>
         </div>
         <?php
