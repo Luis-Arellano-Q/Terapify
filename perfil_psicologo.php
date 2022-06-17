@@ -16,15 +16,6 @@
 <body>
   <header class="header">
     <div>
-      <a href="./Pagina web/index.php">
-        <img src="./Pagina web/imagenes/logo.png" alt="logo de la compañia" class="logo-img">
-      </a>
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="./Psicologos.php">Psicólogos</a></li>
-        <li><a href="./Pagina web/precio.php">Precios</a></li>
-        <li><a href="">Perfil</a></li>
         <?php
 
 use LDAP\Result;
@@ -34,7 +25,20 @@ use LDAP\Result;
           $getConection = $conex->Conectar();
           session_start();
           $ID_usu=$_SESSION['ID'];
+          ?>
+      <a href="<?php if($ID_usu!=null){}else{ ?>./Pagina web/index.php<?php } ?>">
+        <img src="./Pagina web/imagenes/logo.png" alt="logo de la compañia" class="logo-img">
+      </a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="./Psicologos.php">Psicólogos</a></li>
+        <li><a href="./Pagina web/precio.php">Precios</a></li>
+        <li><a href="">Perfil</a></li>
+          <?php
           if($ID_usu!=null){
+         
+        
             ?>
             <a class="psico" href="./perfil_usuario.php">
               <img class="img-avatar avatar-main psico_avatar" src="./imagenes/usuario_avatar.png" alt="avatar"></a>
@@ -94,26 +98,5 @@ use LDAP\Result;
         <li><a href="">Aviso de privacidad</a> | <a href="">Términos y Condiciones</a></li>
       </ul>
   </footer>
-  <?php
-
-    // if(isset($_POST["guardar"])){
-      
-    //   $name= trim($_POST["nombre"]);
-    //   $apellido= trim($_POST["apellido"]);
-    //   $celular= trim($_POST["telefono"]);
-    //   $email= trim($_POST["email"]);
-    //   $edad= $_POST["edad"];
-
-    //   $sql = "UPDATE CLIENTE SET NOMBRE = '$name', APELLIDO='$apellido', TELEFONO=$celular, CORREO='$email',EDAD=$edad WHERE ID = $ID_usu";
-    //   $stmt= oci_parse($getConection, $sql);
-        
-    //   if (oci_execute($stmt)){
-    //     // echo "actualizacion correcta";
-    //     header("location:perfil_usuario.php");
-    //   }else{
-    //     echo "ups un error";
-    //   }
-    // }
-  ?>
 </body>
 </html>

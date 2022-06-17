@@ -13,24 +13,58 @@
 <body>
     <header>
         <div class="logo">
-            <img src="imagenes/logo.png" alt="logo de la compañia" class="logo-img">
+            <?php
+
+    use LDAP\Result;
+
+            require_once("../conexion-DB/conect.php");
+            $conex = new Conexion();
+            $getConection = $conex->Conectar();
+            session_start();
+            $ID_usu=$_SESSION['ID'];
+            ?>
+            <a href="<?php if($ID_usu!=null){}else{ ?>./Pagina web/index.php<?php } ?>">
+
+                <img src="imagenes/logo.png" alt="logo de la compañia" class="logo-img">
+            </a>
         </div>
         <nav>
-            <a href="#">Psicólogos</a>
-            <a href="precio.html">Precio</a>
-            <a href="#" class="boton">Iniciar Sesion</a>
+            <a class="nav_items" href="../Psicologos.php">Psicólogos</a>
+            <a class="nav_items" href="./precio.php">Precios</a>
+            <?php
+            if($ID_usu!=null){
+                ?>
+                <a class="psico" href="../perfil_usuario.php">
+                <img class="img-avatar avatar-main psico_avatar" src="../imagenes/usuario_avatar.png" alt="avatar"></a>
+                <?php
+            }else{
+                ?>
+                <a href="./Iniciar_sesion.php" class="boton">Iniciar Sesion</a>
+                <?php
+            }
+            ?>
          </nav>
     </header>
+    <?php 
+      // id recibido de psicologos.php
+      $ID_PSICO=$_GET["id"];
+      $consu_psico = "SELECT * FROM psicologo where id=$ID_PSICO";
+      $consulta= oci_parse($getConection, $consu_psico);
+      oci_execute($consulta);
+      $datos= oci_fetch_array($consulta);
+    ?>
     <main>
         <section class="Contenedor">
-            <input type="submit" value="Agendar una cita oline" class="button">
+            
+            <a href="" class="button">Agendar cita</a>
             <div class="perfil">
-                 <img src="imagenes/PerfilPisicologo.jpg">
+                 <img src="../imagenes/usuario_avatar.png">
                  <div class="datos">
-                    <h3>Alan Ornelas Ramírez</h3>
-                    <p>Idiomas:Español</p>
-                    <p>Nacionalidad:Peruana</p>
-                    <p>Modelado de trabajo terapéutico:Psicoanalisis</p>
+                    <h3><?php echo $datos['NOMBRE']." ".$datos['APELLIDO'];?></h3>
+                    <p><b>Idiomas:</b> Español</p>
+                    <p><b>Pais:</b> Peru</p>
+                    <p><b>Especialidad: </b><?php echo $datos['ESPECIALIDAD'];?></p>
+                    <p><b>Cedula: </b><?php echo $datos['CEDULA'];?></p>
                  </div> 
             </div>
             

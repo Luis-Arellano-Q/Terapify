@@ -33,6 +33,11 @@ a{
 nav a {
     font-weight: 600;
     padding-right: 75px;
+    
+}
+.nav_items {
+    position: relative;
+    top: -15px;
 }
 .boton{
     background-color: #00aae4;
@@ -40,18 +45,19 @@ nav a {
     border-radius: 10px;
     padding: 10px 30px;
     margin: 45px;
-    
-
+}
+.psico img {
+    width: 50px;
 }
 
 /*Contenedor*/
 .Contenedor{
-    background: #e6e4e4;
+    background: #F2F8FD;
     padding-top: 50px;
     height: 600px;
 }
 /*boton de agendar cita*/
-input{
+.button{
     width: 30%;
 	padding:10px 30px;
 	margin-top: 12px;
@@ -60,12 +66,14 @@ input{
     border-radius: 10px;
 
 }
-input[type='submit']{
+.button{
 	color: #fff;
-	margin: 0px 800px;
+	/* margin: 0px 800px; */
 	margin-top: 22px;
-    border-color: #00aae4;  
-	
+    border-color: #00aae4;
+    float: right;
+    margin-right: 137px;  
+	text-align: center;
 }
 
 /*Perfil*/

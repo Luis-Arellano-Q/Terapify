@@ -16,7 +16,16 @@
 <body>
   <header class="header">
     <div>
-      <a href="./Pagina web/index.php">
+        <?php
+          use LDAP\Result;
+          require_once("./conexion-DB/conect.php");
+          $conex = new Conexion();
+          $getConection = $conex->Conectar();
+          session_start();
+          $ID_usu=$_SESSION['ID'];
+          // if($ID_usu!=null){
+        ?>
+      <a href="<?php if($ID_usu!=null){}else{ ?>./Pagina web/index.php<?php } ?>" >
         <img src="./Pagina web/imagenes/logo.png" alt="logo de la compañia" class="logo-img">
       </a>
     </div>
@@ -24,16 +33,9 @@
       <ul>
         <li><a href="./Psicologos.php">Psicólogos</a></li>
         <li><a href="./Pagina web/precio.php">Precios</a></li>
-        <?php
 
-use LDAP\Result;
-
-          require_once("./conexion-DB/conect.php");
-          $conex = new Conexion();
-          $getConection = $conex->Conectar();
-          session_start();
-          $ID_usu=$_SESSION['ID'];
-          if($ID_usu!=null){
+            <?php
+            if($ID_usu!=null){
             ?>
             <a class="psico" href="./perfil_usuario.php">
               <img class="img-avatar avatar-main psico_avatar" src="./imagenes/usuario_avatar.png" alt="avatar"></a>
@@ -69,7 +71,7 @@ use LDAP\Result;
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
         <a href="" class="boton">Agendar cita</a>
-        <a href="./perfil_psicologo.php?id=<?php echo $dato_psico["ID"]?>">Ver perfil</a>
+        <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>">Ver perfil</a>
       </div>
       <div class="card_container">
         <?php 
@@ -83,7 +85,7 @@ use LDAP\Result;
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
         <a href="" class="boton">Agendar cita</a>
-        <a href="./perfil_psicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
+        <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
         <?php 
@@ -97,7 +99,7 @@ use LDAP\Result;
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
         <a href="" class="boton">Agendar cita</a>
-        <a href="./perfil_psicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
+        <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
         <?php 
@@ -111,7 +113,7 @@ use LDAP\Result;
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
         <a href="" class="boton">Agendar cita</a>
-        <a href="./perfil_psicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
+        <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
         <?php 
@@ -125,7 +127,7 @@ use LDAP\Result;
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
         <a href="" class="boton">Agendar cita</a>
-        <a href="./perfil_psicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
+        <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
         <?php 
@@ -139,7 +141,7 @@ use LDAP\Result;
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
         <a href="" class="boton">Agendar cita</a>
-        <a href="./perfil_psicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
+        <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
         <?php 
@@ -153,7 +155,7 @@ use LDAP\Result;
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
         <a href="" class="boton">Agendar cita</a>
-        <a href="./perfil_psicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
+        <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       <div class="card_container">
         <?php 
@@ -167,7 +169,7 @@ use LDAP\Result;
         <p>Cedula <?php echo $dato_psico["CEDULA"]?></p>
         <p>Especialidad: <?php echo $dato_psico["ESPECIALIDAD"]?></p>
         <a href="" class="boton">Agendar cita</a>
-        <a href="./perfil_psicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
+        <a href="./Pagina web/Perfil_Pisicologo.php?id=<?php echo $dato_psico["ID"]?>" class="perfil_psico">Ver perfil</a>
       </div>
       
     </section>

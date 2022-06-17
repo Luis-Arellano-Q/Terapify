@@ -29,7 +29,7 @@
 <body>
   <header class="header">
     <div>
-      <a href="./Pagina web/index.php">
+      <a href="./perfil_usuario.php">
         <img src="./Pagina web/imagenes/logo.png" alt="logo de la compañia" class="logo-img">
       </a>    
     </div>
@@ -114,19 +114,8 @@ Ya sólo tienes que realizar el pago de tu cita con <span>--psicólogo--</span> 
     $anio= trim($_POST["anio"]);
     $cvc= trim($_POST["cvc"]);
 
-    // $consu = "SELECT correo FROM cliente where correo='$email'";
-    // $consul= oci_parse($getConection, $consu);
-    // oci_execute($consul);
-
-    // $ID_consul= oci_fetch_array($consul);
-    // $email_usu=$ID_consul['CORREO'];
-
-
-    // if($email_usu==$email){
-    //   echo "ya esta registrado";
-    // }   
-    // else{  
-      $sql = "INSERT INTO DETALLE_TARJETA VALUES (NULL,$num_tarjeta,TO_DATE('$mes."/".$anio','MM/YYYYY'),$cvc,$ID_cita,$ID_usu,$nom_tarjeta)";
+      // $ven=$mes."-".$anio; 
+      $sql = "INSERT INTO DETALLE_TARJETA VALUES (NULL,$num_tarjeta,TO_DATE('0-$mes-$anio','DD-MM-YYYYY'),$cvc,42,$ID_usu,'$nom_tarjeta')";
       $stmt= oci_parse($getConection, $sql);
         
       if (oci_execute($stmt)){
@@ -135,7 +124,6 @@ Ya sólo tienes que realizar el pago de tu cita con <span>--psicólogo--</span> 
         echo "error";
       }
     }
-  // }
 ?>
 </body>
 </html>

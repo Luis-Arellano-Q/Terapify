@@ -13,18 +13,20 @@
 <body>
     <header>
         <div class="logo">
-            <img src="imagenes/logo.png" alt="logo de la compañia" class="logo-img">
-        </div>
-        <nav>
-            <a class="nav_menu" href="../Psicologos.php">Psicólogos</a>
-            <!-- <a href="index.php">Inicio</a> -->
-            <a class="nav_menu" href="">Precios</a>
             <?php
                 require_once("../conexion-DB/conect.php");
                 $conex = new Conexion();
                 $getConection = $conex->Conectar();
                 session_start();
                 $ID_usu=$_SESSION['ID'];
+            ?>
+            <a href="<?php if($ID_usu!=null){}else{ ?>index.php<?php } ?>"><img src="imagenes/logo.png" alt="logo de la compañia" class="logo-img"></a>
+        </div>
+        <nav>
+            <a class="nav_menu" href="../Psicologos.php">Psicólogos</a>
+            <!-- <a href="index.php">Inicio</a> -->
+            <a class="nav_menu" href="">Precios</a>
+            <?php
                 if($ID_usu!=null){
                         ?>
                         <a href="../perfil_usuario.php"><img class="img-avatar avatar-main" src="../imagenes/usuario_avatar.png" alt="avatar"></a>

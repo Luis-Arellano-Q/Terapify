@@ -16,7 +16,7 @@
 <body>
   <header class="header">
     <div>
-      <a href="./Pagina web/index.php">
+      <a href="">
         <img src="./Pagina web/imagenes/logo.png" alt="logo de la compañia" class="logo-img">
       </a>
     </div>
@@ -26,7 +26,6 @@
         <li><a href="./Pagina web/precio.php">Precios</a></li>
         <li><a href="./pagar.php">pagar</a></li>
         <li><a href="./conexion-DB/db-cerrar_sesion.php">Cerrar Sesión</a></li>
-        <li><a href="">Perfil</a></li>
       </ul>
     </nav>
   </header>
